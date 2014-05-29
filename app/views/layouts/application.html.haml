@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+!!!
+%html
+  %head
+    %title Rails-Angular-Blog
+    =stylesheet_link_tag "application", media: "all"
+    =javascript_include_tag "application", controller_name
+    =csrf_meta_tags
+
+  = render 'navbar' 
+  %body{"style" => "margin-top: 40px"}
+    =yield
+
+
+
